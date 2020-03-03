@@ -37,3 +37,4 @@ class PostsController < ApplicationController
     params.require(:post).permit(:weight)
   end
 end
+

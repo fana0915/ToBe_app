@@ -5,7 +5,9 @@
     .side-header__kg
       Kg
   .add
+
     =link_to '記録する', new_post_path, class: "add-info"
+
   .side-main
     - @posts.each do |post|
       .message
@@ -17,4 +19,6 @@
           .content__kg
             Kg
         .bottom
+
           = post.created_at
+
