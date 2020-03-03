@@ -7,4 +7,10 @@
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
   %body
+    %header.header
+      .header__title
+        ToBe
+      .header__right
+        = link_to "#", class: "icon" do
+          = icon('fas', 'cog',  class: "icon")
     = yield

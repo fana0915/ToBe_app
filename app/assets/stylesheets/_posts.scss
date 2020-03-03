@@ -1,11 +1,6 @@
-* {
-  box-sizing: border-box;
-}
-
-.wrapper{
-  height: 100vh;
-  width: 100vw;
-
+body{
+  background-color: #f6f6f6;
+  min-width: 650px;
   .header{
     width: 100vw;
     height: 70px;
@@ -13,20 +8,19 @@
     line-height: 70px;
     display: flex;
     justify-content: space-between;
-    .title{
-      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-      font-size: 40px;
-      text-align: center;
-      margin-left: 100px;
-      color: yellow;
-    }
-    .icon{
-      margin-right: 10px;
-      font-size: 40px;
-      color: yellow;
-    }
+      &__title{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 40px;
+        text-align: center;
+        margin-left: 100px;
+        color: yellow;
+      }
+      .icon{
+        margin-right: 10px;
+        font-size: 40px;
+        color: yellow;
+      }
   }
-
   .side_bar{
     float: left;
     width: 300px;
@@ -77,33 +71,47 @@
       overflow: scroll;
       margin: 20px 20px 20px 20px;
       border: 1px solid;
+
+      .message{
+        margin: 5px 5px;
+        background-color: rgb(238, 234, 234);
+        overflow: scroll;
+        .content{
+          font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;          border-bottom: 1px solid #f6f6f6;
+          display: flex;
+          height: 65px;
+          &__left{
+            height: 55px;
+            width: 55px;
+            padding : 5px 5px;
+            &--image{
+              height: 55px;
+              width: 55px;
+              border: solid 1px;
+            }
+          }
+          &__right{
+            padding-left: 20px;
+            line-height: 70px;
+            font-size: 20px;
+            &__top--title{
+              text-decoration: none;
+              color: black;
+            }
+          }
+          &__kg{
+            padding-left: 40px;
+            line-height: 70px;
+            font-size: 20px;
+          }
+        }
+        .bottom{
+          font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+          color: #999;
+          font-size: 10px;
+          margin-left: 20px;
+        }
+      }
     }
   }
-
-  .main_graph{
-    float: right;
-    width: calc(100vw - 300px);
-    height: calc(100vh - 70px);
-    background-color: #ffecda;
-    
-    .goal{
-      border-radius: 10px;
-      border: 1px solid;
-      font-family: "arial unicode ms";
-      height: 100px;
-      margin: 20px 50px 20px 50px;
-      background-color: white;
-      display: flex;
-      line-height: 100px;
-      .text{
-        padding-left: 20px;
-        font-size: 20px;
-      }
-      .user-goal{
-        padding-left: 20px;
-        font-size: 30px;
-      }
-    }
-  }
-
 }

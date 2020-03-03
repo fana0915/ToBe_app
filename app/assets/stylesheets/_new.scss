@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box;
+}
+
+.wrapper{
+  height: 100vh;
+  width: 100vw;
+
+  .header{
+    width: 100vw;
+    height: 70px;
+    background-color: pink;
+    line-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    .title{
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-size: 40px;
+      text-align: center;
+      margin-left: 100px;
+      color: yellow;
+    }
+    .icon{
+      margin-right: 10px;
+      font-size: 40px;
+      color: yellow;
+    }
+  }
+}

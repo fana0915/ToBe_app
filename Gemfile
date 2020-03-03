@@ -56,3 +56,5 @@ gem 'haml-rails'
 gem 'font-awesome-sass'
 gem 'devise'
 gem "chartkick"
+gem 'better_erros'
+gem 'binding_of_caller'
