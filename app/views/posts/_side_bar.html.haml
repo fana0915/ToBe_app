@@ -5,5 +5,16 @@
     .side-header__kg
       Kg
   .add
-    =link_to '記録する', '#', class: "add-info"
+    =link_to '記録する', new_post_path, class: "add-info"
   .side-main
+    - @posts.each do |post|
+      .message
+        .content
+          .content__left
+            .content__left--image
+          .content__right
+            = link_to post.weight, post_path(post.id), class:"content__right__top--title"
+          .content__kg
+            Kg
+        .bottom
+          = post.created_at
